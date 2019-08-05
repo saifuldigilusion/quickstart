@@ -1,0 +1,14 @@
+{
+    "name": "wisdmlabs/todolist",
+    "description": "You can create the to-do-list of your task",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "saiful",
+            "email": "saiful@digilusion.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
