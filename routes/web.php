@@ -15,7 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//Auth::routes();
+Auth::routes(['register' => false, 'verify' => false]);
+
+/*
+ * saiful 
+ * add logout for GET 
+ */
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['auth']], function() {
